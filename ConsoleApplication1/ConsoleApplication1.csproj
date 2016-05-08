@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D31F3D6-9853-45A7-A88C-E14ECDC6C8A0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\ConsoleApplication1.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ai\AI.cs" />
+    <Compile Include="Ai\AIHero.cs" />
+    <Compile Include="items\Armour.cs" />
+    <Compile Include="items\Bag.cs" />
+    <Compile Include="unitus\Body.cs" />
+    <Compile Include="unitus\BodyPart.cs" />
+    <Compile Include="unitus\BodySlot.cs" />
+    <Compile Include="Bonuses\BonusList.cs" />
+    <Compile Include="map\Cell.cs" />
+    <Compile Include="unitus\Charachteristic.cs" />
+    <Compile Include="Times\CTime.cs" />
+    <Compile Include="Times\CTimeAi.cs" />
+    <Compile Include="Times\CTimeHero.cs" />
+    <Compile Include="items\IArmour.cs" />
+    <Compile Include="items\IBonus.cs" />
+    <Compile Include="map\IFiller.cs" />
+    <Compile Include="unitus\IHaveExp.cs" />
+    <Compile Include="IHaveNameDescription.cs" />
+    <Compile Include="unitus\IMover.cs" />
+    <Compile Include="items\Item.cs" />
+    <Compile Include="items\Iweapon.cs" />
+    <Compile Include="items\IWearingItem.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="map\Map.cs" />
+    <Compile Include="NameDescription.cs" />
+    <Compile Include="unitus\Params.cs" />
+    <Compile Include="items\Poution.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="unitus\Unit.cs" />
+    <Compile Include="items\UsingItem.cs" />
+    <Compile Include="visual\Vizualizer.cs" />
+    <Compile Include="items\Weapon.cs" />
+    <Compile Include="unitus\Whall.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
